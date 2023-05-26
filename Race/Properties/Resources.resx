@@ -59,9 +59,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bronze1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,5 +133,26 @@
   </data>
   <data name="NeGenCar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NeGenCar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BronzeAward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BronzeAward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BronzeIcreased" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BronzeIcreased.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SilverAward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SilverAward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SilverIcreased" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SilverIcreased.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldAward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldAward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LegendAward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LegendAward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roadWarn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roadWarn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

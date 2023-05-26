@@ -122,9 +122,19 @@ namespace Race.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bronze {
+        internal static System.Drawing.Bitmap BronzeAward {
             get {
-                object obj = ResourceManager.GetObject("bronze", resourceCulture);
+                object obj = ResourceManager.GetObject("BronzeAward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BronzeIcreased {
+            get {
+                object obj = ResourceManager.GetObject("BronzeIcreased", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,6 +155,16 @@ namespace Race.Properties {
         internal static System.Drawing.Bitmap gold {
             get {
                 object obj = ResourceManager.GetObject("gold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GoldAward {
+            get {
+                object obj = ResourceManager.GetObject("GoldAward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,6 +194,16 @@ namespace Race.Properties {
         internal static System.Drawing.Bitmap LamboCar1 {
             get {
                 object obj = ResourceManager.GetObject("LamboCar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LegendAward {
+            get {
+                object obj = ResourceManager.GetObject("LegendAward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -211,9 +241,39 @@ namespace Race.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap roadWarn {
+            get {
+                object obj = ResourceManager.GetObject("roadWarn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap silver {
             get {
                 object obj = ResourceManager.GetObject("silver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SilverAward {
+            get {
+                object obj = ResourceManager.GetObject("SilverAward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SilverIcreased {
+            get {
+                object obj = ResourceManager.GetObject("SilverIcreased", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

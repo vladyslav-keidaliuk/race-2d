@@ -73,10 +73,10 @@
             // 
             // award
             // 
-            this.award.Image = global::Race.Properties.Resources.bronze;
-            this.award.Location = new System.Drawing.Point(434, 257);
+            this.award.Image = global::Race.Properties.Resources.LegendAward;
+            this.award.Location = new System.Drawing.Point(118, 57);
             this.award.Name = "award";
-            this.award.Size = new System.Drawing.Size(250, 100);
+            this.award.Size = new System.Drawing.Size(685, 422);
             this.award.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.award.TabIndex = 3;
             this.award.TabStop = false;
@@ -134,7 +134,7 @@
             // 
             // roadTrack4
             // 
-            this.roadTrack4.Image = global::Race.Properties.Resources.road;
+            this.roadTrack4.Image = global::Race.Properties.Resources.roadWarn;
             this.roadTrack4.Location = new System.Drawing.Point(0, 0);
             this.roadTrack4.Name = "roadTrack4";
             this.roadTrack4.Size = new System.Drawing.Size(1111, 1148);

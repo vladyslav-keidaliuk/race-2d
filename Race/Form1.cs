@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -16,6 +17,7 @@ namespace Race
         private int roadSpeed;
         private int traficSpeed;
         private int playerSpeed = 5;
+
         private int score;
         private int carImage;
         
@@ -25,13 +27,16 @@ namespace Race
 
         private bool goleft;
         private bool goright;
+
+        private bool goup;
+        private bool godown;
         
         public Form1()
         {
             
             InitializeComponent();
             timer1.Tick += Timer_Tick;
-            timer1.Interval = 15;
+            timer1.Interval = 10;
             Score_label.Font = new Font("Arial", 25);
             
             Level_label.Font = new Font("Arial", 25);
@@ -50,19 +55,39 @@ namespace Race
             
         }
         
+        [SuppressMessage("ReSharper.DPA", "DPA0003: Excessive memory allocations in LOH", MessageId = "type: System.Byte[]; size: 249MB")]
+        [SuppressMessage("ReSharper.DPA", "DPA0000: DPA issues")]
         private void Timer_Tick(object sender, EventArgs e)
         {
             Score_label.Text = "Балів : " + score;
             score++;
             
+            // if (goleft == true && player.Left > 5)
+            // {
+            //     player.Left -= playerSpeed;
+            //     
+            // }
+            
             if (goleft == true && player.Left > 5)
             {
                 player.Left -= playerSpeed;
+                
             }
 
             if (goright == true && player.Left < 720)
             {
                 player.Left += playerSpeed;
+            }
+            
+            if (goup == true && player.Top > 5)
+            {
+                player.Top -= playerSpeed;
+                
+            }
+
+            if (godown == true && player.Top < 720)
+            {
+                player.Top += playerSpeed;
             }
 
             roadTrack3.Top += roadSpeed;
@@ -99,7 +124,7 @@ namespace Race
             {
                 Level_label.Text = "Рівень: 1";
                 Level_label.ForeColor = Color.Green;
-                award.Image = Properties.Resources.bronze;
+                award.Image = Properties.Resources.BronzeAward;
             }
 
 
@@ -108,7 +133,9 @@ namespace Race
                 Level_label.Text = "Рівень: 2";
                 Level_label.ForeColor = Color.Teal;
                 player.Image = Properties.Resources.BlueCarL21;
-                award.Image = Properties.Resources.silver;
+                award.Image = Properties.Resources.BronzeIcreased;
+                // roadTrack3.Image = Properties.Resources.roadWarn;
+                // roadTrack4.Image = Properties.Resources.roadWarn;
                 roadSpeed = 18;
                 traficSpeed = 15;
             }
@@ -118,7 +145,7 @@ namespace Race
                 Level_label.ForeColor = Color.MediumBlue;
                 Level_label.Text = "Рівень: 3";
                 player.Image = Properties.Resources.BlueCarL31;
-                award.Image = Properties.Resources.gold;
+                award.Image = Properties.Resources.SilverAward;
                 traficSpeed = 23;
                 roadSpeed = 20;
             }
@@ -127,7 +154,7 @@ namespace Race
                 Level_label.Text = "Рівень: 4";
                 Level_label.ForeColor = Color.Orange;
                 player.Image = Properties.Resources.YellowRedCar1;
-                award.Image = Properties.Resources.gold;
+                award.Image = Properties.Resources.SilverIcreased;
                 traficSpeed = 27;
                 roadSpeed = 25;
             }
@@ -136,16 +163,16 @@ namespace Race
                 Level_label.Text = "Рівень: 5";
                 Level_label.ForeColor = Color.DarkRed;
                 player.Image = Properties.Resources.BlueCarL4F11;
-                award.Image = Properties.Resources.gold;
+                award.Image = Properties.Resources.GoldAward;
                 traficSpeed = 30;
                 roadSpeed = 32;
             }
             if (score > 10000)
             {
-                Level_label.Text = "Рівень: 5";
+                Level_label.Text = "Рівень: 6";
                 Level_label.ForeColor = Color.Black;
                 player.Image = Properties.Resources.PoliceCar1;
-                award.Image = Properties.Resources.gold;
+                award.Image = Properties.Resources.LegendAward;
                 traficSpeed = 35;
                 roadSpeed = 38;
             }
@@ -165,6 +192,16 @@ namespace Race
             {
                 goright = true;
             }
+            if (e.KeyCode == Keys.Up)
+            {
+                goup = true;
+            }
+
+            if (e.KeyCode == Keys.Down)
+            {
+                godown = true;
+            }
+
             
         }
 
@@ -177,6 +214,14 @@ namespace Race
             if (e.KeyCode == Keys.Right)
             {
                 goright = false;
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                goup = false;
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                godown = false;
             }
         }
 
@@ -245,7 +290,7 @@ namespace Race
             }
             if ((string)tempCar.Tag == "Right")
             {
-                tempCar.Left = carPosition.Next(350, 700);
+                tempCar.Left = carPosition.Next(350, 750);
             }
 
         }
@@ -269,6 +314,8 @@ namespace Race
         {
             roadTrack3.Location = new Point(0, -1148);
             roadTrack4.Location = new Point(0, 0);
+            roadTrack3.Image = Properties.Resources.road;
+            roadTrack4.Image = Properties.Resources.road;
             player.Image = Properties.Resources.BlueCarL12;
             // roadTrack1.Size = new Size(475,521);
             // roadTrack2.Size = new Size(475,521);
@@ -277,7 +324,7 @@ namespace Race
             goleft = false;
             goright = false;
             score = 0;
-            award.Image = Properties.Resources.bronze;
+            award.Image = Properties.Resources.BronzeAward;
             award.Visible = false;
 
 
