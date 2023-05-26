@@ -1,0 +1,11 @@
+C:\Users\VladislavKPC\RiderProjects\Race\Race\bin\Debug\Race.exe.config
+C:\Users\VladislavKPC\RiderProjects\Race\Race\bin\Debug\Race.exe
+C:\Users\VladislavKPC\RiderProjects\Race\Race\bin\Debug\Race.pdb
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.csproj.AssemblyReference.cache
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.csproj.SuggestedBindingRedirects.cache
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.Properties.Resources.resources
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.csproj.GenerateResource.cache
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.csproj.CoreCompileInputs.cache
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.exe
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.pdb
+C:\Users\VladislavKPC\RiderProjects\Race\Race\obj\Debug\Race.Form1.resources
